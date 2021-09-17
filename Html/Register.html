@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Registration Page
+        </title>
+        <link rel="stylesheet" href="../Css/makeup.css">
+    </head>
+    <body>
+        <h1 id="id1"> <marquee>Register For The Test !! </marquee></h1></marquee>
+
+        <section>
+            <h2 class="cls4" >Fill Your Details Here </h2>
+            <form id="id2" onsubmit="return validate()" action="Final.html" type="submit" target="_blank">
+                <div class="cls1"><label class="cls2"> First Name :</label>
+                <input type="text" placeholder="First Name" required>
+                <br/><br></div>
+
+                <div class="cls1"><label class="cls2"> Last Name :</label>
+                <input type="text" placeholder="Last Name" required><br/><br>
+                </div>
+
+                <div class="cls1"><label class="cls2">Email Id : </label>
+                <input id="user" type="email" placeholder="Valid Email" required><br/><br></div>
+
+                <div class="cls1"><label class="cls2"> Phone Number :</label>
+                <input type="number" placeholder="Mobile Number" required><br/><br></div>
+
+                <div class="cls1"><label class="cls2"> Create Password : </label>
+                <input id="fn" type="password" placeholder="Create Password" required><br></div>
+
+                <div class="cls1"><label class="cls2"> Confirm Password :</label>
+                <input id="fn1" type="password" placeholder="Confirm Password"><br>
+                <label id="l1" style="color:red; visibility:hidden;">Password does't match</label></div>
+
+                <div class="cls1"><label class="cls2"> College Name :</label>
+                <input type="text" placeholder="College Name" required><br/><br>
+                </div>
+
+                <div class="cls1"><label class="cls2"> Branch :</label>
+                <input list="Branch" placeholder="Select Branch" required><br/><br>
+                    <datalist id="Branch">
+                        <option value="Computer Science Engineering"></option>
+                        <option value="Information Technology"></option>
+                        <option value="Electronics and Communications Engineering"></option>
+                        <option value="Electrical & Electronics Engineering"></option>
+                        <option value="Mechanical Engineering"></option>
+                        <option value="Civil Engineering"></option>
+                    </datalist></div>
+
+                <div class="cls1"><label class="cls2"> Year :</label>
+                <input list="year" placeholder="select year of study" required><br/><br>
+                    <datalist id="year">
+                        <option value="First Year"></option>
+                        <option value="Second Year"></option>
+                        <option value="Third Year"></option>
+                        <option value="Final Year"></option>
+                    </datalist><label class="l1" style="color:red; visibility:hidden;"></label></div>
+
+                <div class="cls1"><label class="cls2"> Date Of Birth :</label>
+                <input type="date" placeholder="Select Your DOB" required><br/><br>
+                <br/></div>
+                <div class="cls3">
+                <input class="btn1" type="submit" value="Rigister" onclick="getvalues()"></div>
+            </form>
+            
+
+        </section>
+    </body>
+    <script src="../Js/script.js" type="text/JavaScript"></script>
+</html>
